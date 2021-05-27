@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Convert text to speech"
+        android:textSize="25sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your text here..."
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:background="@drawable/rectangle"
+        android:maxLines="10"
+        android:scrollbars="vertical">
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Convert text to speech" />
+
+
+</RelativeLayout>
